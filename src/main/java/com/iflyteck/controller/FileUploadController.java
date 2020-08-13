@@ -89,7 +89,7 @@ public class FileUploadController {
     public String fileUploadToServer (HttpServletRequest request, MultipartFile upload) throws Exception {
         System.out.println("fileUploadToServer!!!");
         // 定义上传文件服务器路径
-        String path = "http://localhost:9090/File_Upload_war/uploads/";
+        String path = "http://localhost:9090/uploads/";
         String filename = upload.getOriginalFilename();
         String uuid = UUID.randomUUID().toString().replace("-", "");
         filename = uuid + "_" + filename;
